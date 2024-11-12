@@ -3,6 +3,8 @@ $(document).ready(function(){
     
     //alert("hello");
     var cliptest = "adsfasdfasdf";
+    cliptest = $(".target").text(); 
+    
     navigator.clipboard.writeText(cliptest).then(
     () => {
       alert("Done")
