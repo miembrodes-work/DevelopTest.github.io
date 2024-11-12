@@ -1,10 +1,9 @@
 $(document).ready(function(){
-  function a() {
-  alert("今クリックしたよね？");
-  }
   
+  $("#thisB").on("click", function(){
+    
+  }
   let button = document.getElementById("thisB");
-  button.addEventListener("click",a);
 }
 
 
