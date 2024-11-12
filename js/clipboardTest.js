@@ -1,9 +1,7 @@
 $(document).ready(function(){
-  
   $("#thisB").on("click", function(){
-    
+    alert("hello");
   }
-  let button = document.getElementById("thisB");
 }
 
 
