@@ -3,9 +3,14 @@ $(document).ready(function(){
     
     //alert("hello");
     var cliptest = "adsfasdfasdf";
-    e.clipboardData.setData("text/plain", cliptest);
-    e.preventDefault();
-    
+    navigator.clipboard.writeText(cliptest).then(
+    () => {
+      alert("Done")
+    },
+    () => {
+      alert("Fail")
+    },
+  );
   });
 });
 
